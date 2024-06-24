@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #022b3a;
+  /* padding-top: 1rem; */
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+}
+
+footer {
+  /* background-color: hsl(203, 58%, 25%); */
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(0, 0%, 45%);
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+}
+.body {
+  flex-grow: 1;
+  padding-top: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  /* background-color: hsl(204, 100%, 95%); */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  position: relative;
+  border-radius: 15px;
+  /* padding: 0 1rem; */
+  box-shadow: 0px 0px 7px 0px hsl(0, 0%, 50%);
+  /* border: 2px solid #cae9ff; */
+  background-color: white;
+  /* backdrop-filter: blur(15px); */
+}
+
+.inputDiv {
+  width: 100%;
+  margin: 1rem;
+  height: 6rem;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 0px 1px 0px hsl(0, 0%, 25%);
+}
+
+.inputDiv p {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  color: hsl(0, 0%, 60%);
+}
+
+.input {
+  border: none;
+  outline: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 25%);
+  border-radius: 15px;
+  width: 100%;
+}
+
+.selectDiv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 1.1rem;
+}
+
+.select {
+  height: 2rem;
+  width: 75%;
+  border-radius: 4px;
+  border: none;
+  background-color: white;
+  font-weight: bold;
+}
+
+.select:focus {
+  outline: none;
+}
+
+.swap {
+  position: absolute;
+  padding: 0px;
+  font-size: 2rem;
+  background-color: hsl(196, 93%, 12%);
+  border: none;
+  height: 3rem;
+  width: 3rem;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  transition: 0.05s;
+  box-shadow: 0px 0px 10px 0px hsl(0, 0%, 50%);
+}
+
+.swap:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .selectDiv {
+    margin-left: 0;
+  }
+}
