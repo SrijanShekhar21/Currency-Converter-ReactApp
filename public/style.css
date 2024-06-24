@@ -138,8 +138,6 @@ footer {
 @media screen and (max-width: 600px) {
   .container {
     flex-direction: column;
-  }
-  .selectDiv {
-    margin-left: 0;
+    padding: 0 1rem;
   }
 }
